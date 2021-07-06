@@ -1,0 +1,26 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Chickfila Webscrape",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanDalmas/CFAHome-Webscraper.git"
+  },
+  "keywords": [
+    "CFA",
+    "Chickfila",
+    "Home",
+    "Webscraper",
+    "scraper"
+  ],
+  "author": "Ryan Dalmas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanDalmas/CFAHome-Webscraper/issues"
+  },
+  "homepage": "https://github.com/RyanDalmas/CFAHome-Webscraper#readme"
+}
