@@ -14,6 +14,12 @@ async function closeBrowser(browser) {
   return browser.close();
 }
 
+function delay(time) {
+   return new Promise(function(resolve) { 
+       setTimeout(resolve, time)
+   });
+}
+
 async function playTest(url) {
   const {browser, page} = await startBrowser();
   page.setViewport({width: 1366, height: 768});
@@ -25,6 +31,7 @@ async function playTest(url) {
   await page.keyboard.type(C.password);
   await page.click(CTA_SELECTOR);
   await page.waitForNavigation();
+  await delay(10000);
   await page.screenshot({path: 'cfa_1.png'});
 }
 
