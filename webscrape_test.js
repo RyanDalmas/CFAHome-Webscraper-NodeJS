@@ -5,7 +5,7 @@ const PASSWORD_SELECTOR = '#login-password';
 const CTA_SELECTOR = '#login-submit';
 
 async function startBrowser() {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ executablePath: 'chromium-browser' });
   const page = await browser.newPage();
   return {browser, page};
 }
