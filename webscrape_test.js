@@ -17,6 +17,7 @@ async function closeBrowser(browser) {
 async function playTest(url) {
   const {browser, page} = await startBrowser();
   page.setViewport({width: 1366, height: 768});
+  await page.setDefaultNavigationTimeout(0); 
   await page.goto(url);
   await page.click(USERNAME_SELECTOR);
   await page.keyboard.type(C.username);
