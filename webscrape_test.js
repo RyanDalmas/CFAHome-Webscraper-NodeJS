@@ -1,8 +1,8 @@
 const puppeteer = require('puppeteer');
 const C = require('./constants');
-const USERNAME_SELECTOR = 'okta-signin-username';
-const PASSWORD_SELECTOR = 'okta-signin-password';
-const CTA_SELECTOR = 'okta-signin-submit';
+const USERNAME_SELECTOR = '#okta-signin-username';
+const PASSWORD_SELECTOR = '#okta-signin-password';
+const CTA_SELECTOR = '#okta-signin-submit';
 
 async function startBrowser() {
   const browser = await puppeteer.launch({ executablePath: 'chromium-browser' });
